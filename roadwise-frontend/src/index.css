@@ -1,0 +1,48 @@
+/* GLOBAL RESET + FONT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* FULL SCREEN – NO WHITE EDGES */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+/* BODY */
+body {
+  background: #fafafa;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+/* PARAGRAPHS */
+p {
+  font-weight: 400;
+}
+
+/* INPUTS */
+input, textarea {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+/* BUTTONS */
+button {
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
