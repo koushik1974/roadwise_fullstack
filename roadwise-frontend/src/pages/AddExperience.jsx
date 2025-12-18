@@ -252,7 +252,6 @@ function AddExperience() {
 
 const pageStyle = {
   width: "100%",
-maxWidth: 1000,
   minHeight: "100vh",
   backgroundImage: "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')",
   backgroundSize: "cover",

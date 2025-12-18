@@ -70,7 +70,7 @@ function Login() {
 
 const pageStyle = {
   width: "100%",
-maxWidth: 1000,
+
   minHeight: "100vh",
   backgroundImage:
     "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')", // SAME background
