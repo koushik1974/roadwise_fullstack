@@ -1,144 +1,161 @@
-🌍 RoadWise — Full-Stack Travel Experience Platform
+# 🌍 RoadWise — Full-Stack Travel Experience Platform
 
-RoadWise is a full-stack web application that enables users to discover budget-friendly travel plans and visually create and share their own travel experiences using an interactive node-based editor.
+RoadWise is a **full-stack web application** that enables users to **discover** and **visually create** travel experiences using an interactive, node-based editor.
 
-Built to demonstrate full-stack engineering, REST API design, authentication, and stateful UI interactions.
+> The project focuses on solving real-world travel planning problems by combining **visual planning**, **structured backend storage**, and **secure authentication**.
 
-🚀 Key Highlights (Recruiter View)
+---
 
-🧠 Designed and implemented a complete MERN-style architecture
+## 📌 Problem Statement
 
-🔐 Built JWT-based authentication with protected routes
+Planning a trip using existing platforms is often fragmented and inefficient:
 
-🎯 Developed an interactive drag-and-drop experience builder
+- Travel information is scattered across blogs, videos, and review sites
+- Most platforms focus only on **booking**, not on real travel experiences
+- Users struggle to understand:
+  - How a trip is structured
+  - The actual flow between places
+  - Whether a plan fits their budget and duration
+- There is no intuitive way to **visually represent** or reuse travel plans created by others
 
-📦 Modeled and persisted graph-like data structures in MongoDB
+As a result, travelers spend significant time researching but still lack clarity and confidence.
 
-🔎 Implemented dynamic city-based search with backend filtering
+---
 
-🧪 Debugged and resolved real-world dependency & deployment issues
+## 💡 Solution — How RoadWise Solves This
 
-🧩 Core Features
-Authentication & Security
+**RoadWise** provides a **visual, experience-driven travel planning platform** where users can both **discover** and **create** structured travel plans.
 
-User registration and login
+### 🔍 Experience Discovery
+- Search trips by **city**
+- View real user-shared experiences with:
+  - Budget
+  - Number of days
+  - Mode of travel
+- Enables quick comparison of practical, real-world trips
 
-Secure JWT authentication
+### 🧭 Visual Experience Builder
+- Interactive **drag-and-drop editor**
+- Users can add and arrange:
+  - Hotels / Inns (with food preference)
+  - Beaches
+  - Temples
+  - Hill stations
+  - Rivers / Lakes
+- Locations are connected using **curved dotted paths**
+- Converts abstract travel ideas into a **clear visual journey**
 
-Backend route protection for sensitive operations
+### 🗂️ Structured Backend Storage
+- Experiences are stored as structured data:
+  - Nodes → places (type, position, metadata)
+  - Connections → movement between places
+- Enables accurate reconstruction, reuse, and searching
 
-Travel Discovery
+### 🔐 Trust & Security
+- JWT-based authentication
+- Only logged-in users can add experiences
+- Each experience is linked to its creator
 
-City-based travel search
+---
 
-Displays budget, duration, and travel mode
+## 🚀 Key Highlights
 
-Clean and responsive UI
+- Full-stack application using **React + Node.js**
+- Secure **JWT authentication**
+- Interactive drag-and-drop UI
+- Graph-like data modeling in **MongoDB**
+- RESTful API design
+- Real-world debugging and dependency handling
 
-Experience Creation (Primary Feature)
+---
 
-Visual drag-and-drop editor
+## 🧩 Features
 
-Nodes represent:
+### 🔐 Authentication
+- User registration and login
+- JWT-based authentication
+- Protected routes
 
-Hotels / Inns (with food preference)
+### 🔍 Travel Search
+- City-based search
+- Budget, days, and travel mode display
 
-Beaches, temples, hills, water bodies
+### 🧭 Add Experience (Core Feature)
+- Visual node-based editor
+- Persistent backend storage
+- Clean and responsive UI
 
-Curved dotted connections to represent travel flow
+---
 
-Backend stores:
+## 🖼️ Application Screenshots
 
-Node positions (x, y)
+<details>
+<summary>Click to view screenshots</summary>
 
-Node types & metadata
+### Home Page
+![Home](screenshots/home.png)
 
-Connection relationships
+### Login Page
+![Login](screenshots/login.png)
 
-🖼️ Screenshots
+### Search Results
+![Search](screenshots/search.png)
 
-All major flows are documented with screenshots:
+### Add Experience Editor
+![Editor](screenshots/add-experience.png)
 
-Home Page:
+</details>
 
-<img width="1920" height="1080" alt="Screenshot (123)" src="https://github.com/user-attachments/assets/89888423-c7c9-46e5-9152-5f647082203a" />
+---
 
-Login:
+## 🏗️ Tech Stack
 
-<img width="1920" height="1080" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/470f9b1a-1659-4a83-8998-494eeba10d3a" />
+### Frontend
+- React.js
+- Vite
+- React Router
+- JavaScript (ES6+)
+- CSS
+- React Hot Toast
 
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- REST APIs
 
-Register:
+---
 
-<img width="1920" height="1080" alt="Screenshot (121)" src="https://github.com/user-attachments/assets/50180c46-57a9-44aa-8af2-8782f3218f1d" />
+## 📁 Project Structure
 
-
-Search Results:
-
-<img width="1920" height="1080" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/42dfcb72-4f46-41b4-a017-9c705267288a" />
-
-
-Add Experience Editor:
-
-<img width="1920" height="1617" alt="screencapture-localhost-5173-add-2025-12-18-15_54_12" src="https://github.com/user-attachments/assets/ec8ddf24-3ac5-45f1-874e-aaed4c139513" />
-
-
-Experience Detail View:
-
-<img width="1920" height="1058" alt="screencapture-localhost-5173-trip-6943d65795b50b016b37babc-2025-12-19-10_24_26" src="https://github.com/user-attachments/assets/5e11a840-e7ba-48d1-a383-b58dd3220959" />
-
-
-📁 Located in:
-
-/screenshots
-
-🏗️ Tech Stack
-Frontend
-
-React.js
-
-Vite
-
-React Router
-
-JavaScript (ES6+)
-
-CSS / Inline Styling
-
-React Hot Toast
-
-Backend
-
-Node.js
-
-Express.js
-
-MongoDB
-
-Mongoose
-
-JWT Authentication
-
-RESTful API Design
-
-📁 Project Architecture
+```bash
 roadwise/
 ├── roadwise-frontend/
-│   └── React SPA (UI, Routing, State)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── assets/
+│   ├── public/
+│   └── vite.config.js
 │
 ├── roadwise-backend/
-│   └── Express API (Auth, Travel, DB)
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── app.js
 │
 └── screenshots/
 
-⚙️ Local Setup (Verified)
+⚡ Quick Start
 Backend
 cd roadwise-backend
 npm install
 node app.js
 
 
-Runs on:
+Backend runs on:
 
 http://localhost:5000
 
@@ -148,71 +165,44 @@ npm install
 npm run dev
 
 
-Runs on:
+Frontend runs on:
 
 http://localhost:3000
 
-📦 Database Design (MongoDB)
+⚙️ Environment Variables
 
-Each travel experience stores:
+Create a .env file inside roadwise-backend/:
 
-City, budget, duration, travel mode
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/roadwise
+JWT_SECRET=your_jwt_secret
+PORT=5000
 
-Array of nodes (type, position, metadata)
+🔌 API Endpoints
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/travel/search?city=Goa
+POST /api/travel/add        (Protected)
 
-Array of connections (graph edges)
+🧠 Engineering Highlights
 
-User reference (creator)
+Designed REST APIs with authentication & authorization
 
-Demonstrates schema design, data normalization, and relationship handling.
+Implemented protected frontend routes using JWT
 
-🧪 Engineering Challenges Solved
+Modeled graph-structured travel data in MongoDB
 
-Dependency conflicts in MongoDB drivers
+Synced interactive UI state with backend persistence
 
-JWT token handling and authorization flow
+Debugged real-world dependency and environment issues
 
-Syncing frontend state with backend persistence
+🔮 Future Enhancements
 
-Handling protected routes and auth redirects
-
-🔮 Planned Enhancements
-
-Filters (budget, duration)
+Budget & duration filters
 
 User profiles
 
-Likes / bookmarks
+Likes & bookmarks
 
 Map integration
 
 Cloud deployment (Vercel + Render)
-
-👨‍💻 Developer
-
-Bathula Koushik Yadav
-B.Tech CSE — IIIT Jabalpur
-
-💻 Full-Stack Development
-
-🤖 AI / ML Enthusiast
-
-🧠 Strong in DSA & system fundamentals
-
-🔗 LinkedIn: https://www.linkedin.com/in/bathula-koushik-93b099325
-
-📧 Email: bathulskoushikyadav@gmail.com
-
-⭐ Why Recruiters Care
-
-RoadWise demonstrates the ability to:
-
-Build and integrate frontend + backend
-
-Design real-world data models
-
-Implement secure authentication
-
-Debug production-level issues
-
-Think in terms of user experience and system design
