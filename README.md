@@ -159,7 +159,7 @@ roadwise/
 ```
 
 
-# ⚡ Quick Start
+## ⚡ Quick Start
 
 Backend
 ```bash
@@ -168,37 +168,37 @@ npm install
 node app.js
 ```
 
-Backend runs on:
+### Backend runs on:
 ```bash
 http://localhost:5000
 ```
-Frontend
+### Frontend
 ```bash
 cd roadwise-frontend
 npm install
 npm run dev
 ```
 
-Frontend runs on:
+### Frontend runs on:
 ```
 http://localhost:3000
 ```
-# ⚙️ Environment Variables
+## ⚙️ Environment Variables
 
-Create a .env file inside roadwise-backend/:
+### Create a .env file inside roadwise-backend/:
 ```
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/roadwise
 JWT_SECRET=your_jwt_secret
 PORT=5000
 ```
-# 🔌 API Endpoints
+## 🔌 API Endpoints
 ```bash
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/travel/search?city=Goa
 POST /api/travel/add        (Protected)
 ```
-# 🧠 Engineering Highlights
+## 🧠 Engineering Highlights
 
 -Designed REST APIs with authentication & authorization
 
@@ -210,7 +210,7 @@ POST /api/travel/add        (Protected)
 
 -Debugged real-world dependency and environment issues
 
-# 🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 -Budget & duration filters
 
