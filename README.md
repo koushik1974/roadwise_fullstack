@@ -96,24 +96,33 @@ As a result, travelers spend significant time researching but still lack clarity
 <summary>Click to view screenshots</summary>
 
 ### Home Page
-![Home](<img width="1920" height="1080" alt="Screenshot (123)" src="https://github.com/user-attachments/assets/a6b6a559-4cd3-4b7c-bed7-68636a8ade8b" />)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a6b6a559-4cd3-4b7c-bed7-68636a8ade8b" width="700">
+</p>
 
 ### Login Page
-![Login](<img width="1920" height="1080" alt="Screenshot (122)" src="https://github.com/user-attachments/assets/9509cba1-1344-4664-a4f1-c333e78b5870" />)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9509cba1-1344-4664-a4f1-c333e78b5870" width="700">
+</p>
 
 ### Search Results
-![Search](<img width="1920" height="1080" alt="Screenshot (124)" src="https://github.com/user-attachments/assets/3f315722-93f3-4683-82b5-2d607ec694b4" />)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3f315722-93f3-4683-82b5-2d607ec694b4" width="700">
+</p>
 
-### Search Results detailed
-![Search](<img width="1920" height="1058" alt="screencapture-localhost-5173-trip-6943d65795b50b016b37babc-2025-12-19-10_24_26" src="https://github.com/user-attachments/assets/08ea0004-cac9-44fd-b5a0-616644f4409f" />)
+### Search Results (Detailed)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08ea0004-cac9-44fd-b5a0-616644f4409f" width="700">
+</p>
 
 ### Add Experience Editor
-![Editor](<img width="1920" height="1617" alt="screencapture-localhost-5173-add-2025-12-18-15_54_12" src="https://github.com/user-attachments/assets/f970ff05-4d17-4e68-ba7a-511ad164fe6b" />)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f970ff05-4d17-4e68-ba7a-511ad164fe6b" width="700">
+</p>
 
 </details>
-
 ---
+
 
 ## 🏗️ Tech Stack
 
@@ -161,7 +170,7 @@ roadwise/
 
 ## ⚡ Quick Start
 
-Backend
+### Backend
 ```bash
 cd roadwise-backend
 npm install
@@ -198,26 +207,23 @@ POST /api/auth/login
 GET  /api/travel/search?city=Goa
 POST /api/travel/add        (Protected)
 ```
+
 ## 🧠 Engineering Highlights
 
 -Designed REST APIs with authentication & authorization
-
 -Implemented protected frontend routes using JWT
-
 -Modeled graph-structured travel data in MongoDB
-
 -Synced interactive UI state with backend persistence
-
 -Debugged real-world dependency and environment issues
 
 ## 🔮 Future Enhancements
 
 -Budget & duration filters
+- User profiles
+- Likes & bookmarks
+- Map integration
+- Cloud deployment (Vercel + Render)
+  
+## 📄 License
 
--User profiles
-
--Likes & bookmarks
-
--Map integration
-
-Cloud deployment (Vercel + Render)
+This project is licensed under the MIT License.
