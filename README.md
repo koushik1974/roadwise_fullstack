@@ -3,6 +3,7 @@
 RoadWise is a **full-stack web application** that enables users to **discover** and **visually create** travel experiences using an interactive, node-based editor.
 
 > The project focuses on solving real-world travel planning problems by combining **visual planning**, **structured backend storage**, and **secure authentication**.
+> 
 > The main motivation behind this project was my personal experience while planning trips.
 When I wanted to visit a place, I often relied on friends or searched the internet, but I rarely found a clear, complete travel plan that matched my budget and duration of stay.
 To solve this, I built RoadWise, a web application where authenticated users can share structured travel experiences, enabling others to make informed decisions and plan trips more efficiently.
@@ -158,7 +159,7 @@ roadwise/
 ```
 
 
-⚡ Quick Start
+# ⚡ Quick Start
 
 Backend
 ```bash
@@ -182,7 +183,7 @@ Frontend runs on:
 ```
 http://localhost:3000
 ```
-⚙️ Environment Variables
+# ⚙️ Environment Variables
 
 Create a .env file inside roadwise-backend/:
 ```
@@ -190,33 +191,33 @@ MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/roadwise
 JWT_SECRET=your_jwt_secret
 PORT=5000
 ```
-🔌 API Endpoints
+# 🔌 API Endpoints
 ```bash
 POST /api/auth/register
 POST /api/auth/login
 GET  /api/travel/search?city=Goa
 POST /api/travel/add        (Protected)
 ```
-🧠 Engineering Highlights
+# 🧠 Engineering Highlights
 
-Designed REST APIs with authentication & authorization
+-Designed REST APIs with authentication & authorization
 
-Implemented protected frontend routes using JWT
+-Implemented protected frontend routes using JWT
 
-Modeled graph-structured travel data in MongoDB
+-Modeled graph-structured travel data in MongoDB
 
-Synced interactive UI state with backend persistence
+-Synced interactive UI state with backend persistence
 
-Debugged real-world dependency and environment issues
+-Debugged real-world dependency and environment issues
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 
-Budget & duration filters
+-Budget & duration filters
 
-User profiles
+-User profiles
 
-Likes & bookmarks
+-Likes & bookmarks
 
-Map integration
+-Map integration
 
 Cloud deployment (Vercel + Render)
